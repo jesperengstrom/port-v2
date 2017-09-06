@@ -43,14 +43,14 @@ body,
 }
 
 
-/* // */
-
-
 /* PADDING & MARGIN */
 
 .p-1 {
     padding: 1rem;
 }
+
+
+/* SECTIONS BACKGROUNDS */
 
 .bg-hero {
     background-color: #AB5D5D;
@@ -64,8 +64,11 @@ body,
     background-color: #5E7D5E;
 }
 
+
+/* SECTIONS BG TRANSITIONS */
+
 .fade {
-    backface-visibility: hiden;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: background-color 2s ease;
 }

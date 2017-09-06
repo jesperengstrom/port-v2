@@ -5,7 +5,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 //CSS
 import './styles.css';
 
-export function Section({ section, setSection, children}) {
+export function Section({ section, setSection, children }) {
 
     function handleChange(status){
         if (status) {
@@ -13,7 +13,7 @@ export function Section({ section, setSection, children}) {
         }
     }
     return (
-        <Grid.Column className="border section">
+        <Grid.Column id={section.id} className="border section">
             {children}
             <VisibilitySensor partialVisibility={true} minTopValue={250} onChange={handleChange}/>
         </Grid.Column>

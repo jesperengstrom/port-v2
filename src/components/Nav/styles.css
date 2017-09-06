@@ -3,3 +3,27 @@
     width: 10%;
     min-width: 50px;
 }
+
+
+/* arrow */
+
+.fixed {
+    position: fixed;
+    bottom: 1rem;
+}
+
+.fixed a {
+    color: rgba(0, 0, 0, .87);
+}
+
+.fixed a:hover {
+    color: rgb(0, 0, 0)
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.transition-flip {
+    transition: transform 0.5s cubic-bezier(0.75, 0.21, 0.65, 1.34);
+}
