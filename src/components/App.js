@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 //css
 import 'semantic-ui-css/semantic.min.css';
-import './App.css';
+import './styles.css';
 
 //my components
-import { Main } from './components/Main/Main';
-import { Section } from './components/Section/Section';
+import Main from './Main';
+import Section from './Section';
+import Nav from './Nav';
 
 //sections props
 const sections = [
@@ -25,7 +26,9 @@ const sections = [
 ]
 
 class App extends Component {
-  state = {currentSection: sections[0]}
+  state = {
+    currentSection: sections[0]
+  }
 
   setCurrentSection = (section) =>{
     this.setState({currentSection: section})
@@ -34,12 +37,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className={`App fade ${this.state.currentSection.bgClass}`}>
+      <div className={`App flex flex-row full-height fade p-1 ${this.state.currentSection.bgClass}`}>
+        <Main>
         {
           sections.map((item, index) =>{
-          return <Section setSection={this.setCurrentSection} section={item} key={index}></Section>
-        })
-        }
+            return <Section setSection={this.setCurrentSection} section={item} key={index}></Section>
+            })
+          }
+        </Main>
+        <Nav />
       </div>
     );
   }

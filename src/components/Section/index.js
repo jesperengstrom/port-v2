@@ -3,20 +3,21 @@ import { Grid } from 'semantic-ui-react';
 import VisibilitySensor from 'react-visibility-sensor';
 
 //CSS
-import './Section.css';
+import './styles.css';
 
-export function Section(props) {
+export function Section({ section, setSection, children}) {
 
     function handleChange(status){
         if (status) {
-            props.setSection(props.section);
+            setSection(section);
         }
     }
     return (
-        <Grid.Column className="full-height border">
-            {props.children}
+        <Grid.Column className="border section">
+            {children}
             <VisibilitySensor partialVisibility={true} minTopValue={250} onChange={handleChange}/>
         </Grid.Column>
-    )
+    );
 }
 
+export default Section;
