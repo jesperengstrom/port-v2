@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //libraries
-import ScrollableAnchor from 'react-scrollable-anchor';
 import VisibilitySensor from 'react-visibility-sensor';
 
 //CSS
@@ -16,12 +15,10 @@ function Section({ section, setSection, children}){
         }
     }
         return (
-        <ScrollableAnchor id={section.id}>
-            <div className="section border">
+            <div id={section.name} className="section border">
                 {children}
                 <VisibilitySensor partialVisibility={true} minTopValue={250} onChange={handleChange}/>
             </div>
-        </ScrollableAnchor>
     );}
 
 Section.propTypes = {

@@ -50,24 +50,9 @@ body,
 }
 
 
-/* SECTIONS BACKGROUNDS */
+/* BG TRANSITIONS */
 
-.bg-hero {
-    background-color: #AB5D5D;
-}
-
-.bg-portfolio {
-    background-color: #6A6AC0;
-}
-
-.bg-about {
-    background-color: #5E7D5E;
-}
-
-
-/* SECTIONS BG TRANSITIONS */
-
-.fade {
+.bg-fade {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: background-color 2s ease;

@@ -9,27 +9,27 @@ import Main from './Main';
 import Section from './Section';
 import Nav from './Nav';
 
-//sections props
+//sections - scalable, just add more
 const sections = [
   {
     name: 'hero',
     id: 's-0',
-    bgClass: 'bg-hero'
+    style: { backgroundColor: '#AB5D5D'}
   },
   {
     name: 'portfolio',
     id: 's-1',
-    bgClass: 'bg-portfolio'
+    style: { backgroundColor: '#6A6AC0' }
   },
   {
     name: 'about',
     id: 's-2',
-    bgClass: 'bg-about'
+    style: { backgroundColor: '#5E7D5E' }
   }
 ]
 
 class App extends Component {
-  
+
   state = {
     currentSection: sections[0],
     next: sections[1].id,
@@ -37,24 +37,25 @@ class App extends Component {
   }
 
   setCurrentSection = (section) =>{
-    this.setState({currentSection: section}, this.setNextSection)
+    this.setState({currentSection: section}, this.setNextSection) //calls setState twice, sould get a value then setstate
   }
 
   setNextSection = () => {
     for (let i = 0; i < sections.length; i++) {
       if (sections[i].name === this.state.currentSection.name) {
         if (i === sections.length - 1) { //if we're on the last section, go up.
-          this.setState({next: sections[i - 1].id, last : true})
+          this.setState({next: sections[i - 1].name, last : true})
         } else { //else, keep on going down...
-          this.setState({next: sections[i + 1].id, last : false})
+          this.setState({next: sections[i + 1].name, last : false})
         }
       }
     }
   }
 
   render() {
+    console.log('renders! ' + this.state.currentSection.name)
     return (
-      <div className={`flex flex-row full-height fade p-1 ${this.state.currentSection.bgClass}`}>
+      <div style={this.state.currentSection.style} className="flex flex-row full-height bg-fade p-1">
         <Main>
         {
           sections.map((item, index) =>{
