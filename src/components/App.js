@@ -29,6 +29,7 @@ const sections = [
 ]
 
 class App extends Component {
+  
   state = {
     currentSection: sections[0],
     next: sections[1].id,

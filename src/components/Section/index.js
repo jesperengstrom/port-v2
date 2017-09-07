@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 //libraries
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -22,5 +23,11 @@ function Section({ section, setSection, children}){
             </div>
         </ScrollableAnchor>
     );}
+
+Section.propTypes = {
+    section: PropTypes.object.isRequired,
+    setSection: PropTypes.func.isRequired,
+    children: PropTypes.array
+};
 
 export default Section;

@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+//libs
 import { Icon } from 'semantic-ui-react';
 
 //CSS
@@ -16,5 +19,10 @@ function Nav({ next, last }){
         </div>
         );
     }
+
+Nav.propTypes = {
+    next: PropTypes.string.isRequired,
+    last: PropTypes.bool.isRequired
+};
 
 export default Nav;
