@@ -10,6 +10,16 @@ h2 {
 
 .section-header-underline {
     height: 0.5rem;
-    width: 17%;
     background-color: rgba(0, 0, 0, .87);
+    -webkit-transition: width 3s ease-out;
+    -moz-transition: width 3s ease-out;
+    transition: width 3s ease-out;
+}
+
+.underline-long {
+    width: 220px;
+}
+
+.underline-none {
+    width: 0;
 }

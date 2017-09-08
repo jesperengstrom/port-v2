@@ -21,21 +21,24 @@ class App extends Component {
   }
 
   setCurrentSection = (curSection) =>{
+    let next, last;
+
     for (let i = 0; i < sections.length; i++) {
       if (sections[i].name === curSection.name) {
         if (i === sections.length - 1) { //if we're on the last section, go up.
-          this.setState({
-            currentSection: curSection,
-            next: sections[i - 1].name, 
-            last : true})
+            next = sections[i - 1].name; 
+            last = true;
         } else { //else, keep on going down...
-          this.setState({
-            currentSection: curSection,
-            next: sections[i + 1].name, 
-            last : false})
+            next = sections[i + 1].name;
+            last = false;
         }
       }
     }
+    this.setState({
+      currentSection: curSection,
+      next: next,
+      last: last
+    })
   }
 
 
