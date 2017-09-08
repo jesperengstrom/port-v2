@@ -1,0 +1,15 @@
+h2 {
+    font-family: 'Neuzeit S LT Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+.section-header-frame {
+    width: 100%;
+    padding: 2rem;
+}
+
+.section-header-underline {
+    height: 0.5rem;
+    width: 17%;
+    background-color: rgba(0, 0, 0, .87);
+}

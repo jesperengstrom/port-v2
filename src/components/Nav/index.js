@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //libs
-import { Icon } from 'semantic-ui-react';
 import Scrollchor from 'react-scrollchor';
 
 //CSS
@@ -12,12 +11,17 @@ function Nav({ next, last }){
 
     return (
         <div className="nav flex justify-center">
-            <div className="fixed flex align-end p-1" style={{height:'33%'}}>
+            <div className='fixed fixed-top'>
+                <a href="mailto:jengstro@gmail.com">
+                    <i className="anticon large-icon">&#xe659;</i>
+                </a>
+            </div>
+            <div className="fixed fixed-bottom flex align-end p-1" style={{height:'33%'}}>
                 <Scrollchor 
-                    to={next} 
+                    to={next}
                     animate={{ offset: 0, duration: 700}} 
                     className={`transition-flip ${last ? 'flip' : ''}`}>
-                    <Icon name='arrow down'link size='huge' />
+                        <i className="anticon large-icon">&#xe619;</i>
                 </Scrollchor>
             </div>
         </div>
