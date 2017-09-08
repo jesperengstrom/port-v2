@@ -6,9 +6,9 @@ import './styles.css';
 
 function Main({children}) {
         return (
-            <div className="main full-height flex flex-column">
+            <main className="main full-height flex flex-column">
                 {children}
-            </div>
+            </main>
         );
     }
 

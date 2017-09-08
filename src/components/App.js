@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import './styles.css';
 
-//js-files
+//data
 import sections from './sections';
 
 //my components
@@ -39,6 +39,7 @@ class App extends Component {
       next: next,
       last: last
     })
+    console.log('current section ' + this.state.currentSection.name);
   }
 
 
