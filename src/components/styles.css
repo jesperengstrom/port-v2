@@ -52,6 +52,19 @@ body,
 }
 
 
+/* headers */
+
+h2 {
+    font-family: 'Neuzeit S LT Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Neuzeit S LT Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+
+
 /* flex */
 
 .flex {
@@ -64,6 +77,10 @@ body,
 
 .flex-column {
     flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
 }
 
 .align-center {

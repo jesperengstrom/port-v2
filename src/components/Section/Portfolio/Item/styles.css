@@ -1,0 +1,12 @@
+.portfolio-item {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.portfolio-item-wrapper {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}

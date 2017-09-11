@@ -1,4 +1,4 @@
-.half-width {
-    width: 50%;
-    height: 100%;
+.card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
