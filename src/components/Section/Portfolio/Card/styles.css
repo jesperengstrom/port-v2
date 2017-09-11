@@ -3,15 +3,22 @@
     max-height: 50%;
     width: 20%;
     max-width: 20%;
+    min-width: 250px;
     /* flex-grow: 1; */
     padding-bottom: 1rem;
     padding-right: 1rem;
 }
 
 .card {
-    background-color: white;
+    /* background-color: white; */
     height: 100%;
     justify-content: flex-end;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.26);
+}
+
+.card:hover {
+    cursor: pointer;
+    filter: brightness(50%);
 }
 
 .card-img-container {
@@ -23,4 +30,19 @@
 
 .card-img {
     width: 100%;
+    filter: opacity(85%) grayscale(50%);
+}
+
+.card-header {
+    color: white;
+    font-weight: 200;
+}
+
+.border-top {
+    border-top: 0.5rem solid rgba(0, 0, 0, 0.25);
+    ;
+}
+
+.border-bottom {
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.25);
 }

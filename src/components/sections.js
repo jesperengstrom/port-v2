@@ -7,7 +7,8 @@ const sections = [
     },
     {
       name: 'portfolio',
-      style: { backgroundColor: '#6A6AC0' },
+      // style: { backgroundColor: '#6A6AC0' }, old purple
+      style: { backgroundColor: 'rgba(209, 209, 229, 0.38)' },
       displayName: 'Portfolio',
     },
     {
