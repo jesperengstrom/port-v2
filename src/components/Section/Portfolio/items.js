@@ -11,7 +11,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'palmekartan.jpg',
-        color: 'rgba(174, 21, 21, 0.87)'
+        color: 'rgb(119, 35, 36)'
     }, 
     {
         name: 'Talartoppen',
@@ -21,7 +21,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'talartoppen.jpg',
-        color: 'rgba(53, 86, 49, 0.82)'
+        color: 'rgb(94, 135, 89)'
 
     },
     {
@@ -32,7 +32,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'front-end-blog.jpg',
-        color: 'rgba(30, 12, 60, 0.78)'
+        color: 'rgb(61, 44, 89)'
     },
     {
         name: 'JMDb',
@@ -42,7 +42,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'jmdb.jpg',
-        color: 'rgba(245, 222, 80, 0.89)'
+        color: 'rgb(212, 192, 70)'
     },
     {
         name: 'Asap Development',
@@ -52,7 +52,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'asap-dev.jpg',
-        color: 'rgba(85, 18, 8, 1)'
+        color: 'rgb(161, 100, 64)'
     },
     {
         name: 'Sänka skepp',
@@ -62,7 +62,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'sanka-skepp.jpg',
-        color: 'rgba(73, 106, 141, 0.89)'
+        color: 'rgb(75, 114, 155)'
     },
     {
         name: 'Todo',
@@ -72,7 +72,7 @@ export const items = [
         url: 'http://http://palmekartan.cloudno.de/',
         repo: 'http://github.com',
         img: 'todo.jpg',
-        color: 'rgba(174, 21, 21, 0.51)'
+        color: 'rgb(82, 126, 124)'
     },
 ];
 

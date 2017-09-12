@@ -7,8 +7,8 @@ const sections = [
     },
     {
       name: 'portfolio',
-      // style: { backgroundColor: '#6A6AC0' }, old purple
-      style: { backgroundColor: 'rgba(209, 209, 229, 0.38)' },
+      style: { backgroundColor: 'rgba(94, 94, 175, 0.67)' }, 
+      // style: { backgroundColor: 'rgba(71, 151, 104, 0.32' },
       displayName: 'Portfolio',
     },
     {

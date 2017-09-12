@@ -37,8 +37,7 @@ class Portfolio extends React.Component{
             <article className="flex full-height p-2 card-wrapper">
                 {!this.state.openItem ? 
                     cards : 
-                    [<Card item={this.state.openItem} onClick={this.toggleItem} />,
-                    <Item item={this.state.openItem} onClick={this.closeItem} />]}
+                    <Item item={this.state.openItem} onClick={this.closeItem} />}
             </article>
             );
     }
