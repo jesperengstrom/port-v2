@@ -49,7 +49,7 @@ class App extends Component {
       })
 
     return (
-      <div style={this.state.currentSection.style} className="flex flex-row full-height bg-fade p-1">
+      <div style={this.state.currentSection.style} className="flex flex-row bg-fade p-1">
         <Main>
           {mappedSections}
         </Main>
