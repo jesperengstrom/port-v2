@@ -1,4 +1,12 @@
 .card-wrapper {
     flex-wrap: wrap;
     align-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 1510px) {
+    .card-wrapper {
+        width: 100%;
+    }
 }

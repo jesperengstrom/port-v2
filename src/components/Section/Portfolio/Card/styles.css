@@ -1,4 +1,7 @@
 .card-container {
+    width: 23%;
+    min-width: 250px;
+    max-width: 250px;
     margin-top: 1rem;
     margin-right: 1rem;
 }
@@ -6,4 +9,20 @@
 .card-img {
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width: 925px) {
+    .card-container {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .card-container {
+        min-width: 80%;
+        height: 60px;
+    }
+    .card-img {
+        height: 0;
+    }
 }
