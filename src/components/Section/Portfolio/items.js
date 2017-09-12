@@ -45,7 +45,7 @@ export const items = [
         color: 'rgb(212, 192, 70)'
     },
     {
-        name: 'Asap Development',
+        name: 'Asap Dev',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: [node, 'Express', 'MongoDb', 'Mongoose'],

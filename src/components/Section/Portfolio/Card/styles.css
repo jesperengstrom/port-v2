@@ -4,11 +4,45 @@
     max-width: 250px;
     margin-top: 1rem;
     margin-right: 1rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .card-img {
     height: 100%;
     width: 100%;
+}
+
+.card-header-container {
+    width: 100%;
+    align-items: flex-end;
+}
+
+.card-header {
+    color: white;
+    padding-left: 1rem;
+    font-weight: normal;
+    opacity: 0;
+    position: relative;
+    top: -25px;
+    transition: opacity 0.4s cubic-bezier(.9, 0, .1, 1) 0s;
+}
+
+.overlay {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    justify-content: center;
+    transition: height .4s cubic-bezier(.9, 0, .1, 1) 0s;
+}
+
+.card-container:hover .overlay {
+    height: 100%;
+}
+
+.card-container:hover .card-header {
+    opacity: 1;
 }
 
 @media screen and (max-width: 925px) {
@@ -23,6 +57,9 @@
         height: 60px;
     }
     .card-img {
-        height: 0;
+        visibility: hidden;
+    }
+    .overlay {
+        height: 100%;
     }
 }
