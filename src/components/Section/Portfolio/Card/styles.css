@@ -37,13 +37,18 @@
     transition: height .4s cubic-bezier(.9, 0, .1, 1) 0s;
 }
 
+.overlay-visible,
 .card-container:hover .overlay {
     height: 100%;
 }
 
+.header-visible,
 .card-container:hover .card-header {
     opacity: 1;
 }
+
+
+/* media queries */
 
 @media screen and (max-width: 925px) {
     .card-container {
@@ -53,13 +58,23 @@
 
 @media screen and (max-width: 525px) {
     .card-container {
-        min-width: 80%;
+        min-width: 100%;
         height: 60px;
+        margin-top: 0;
     }
     .card-img {
         visibility: hidden;
     }
     .overlay {
         height: 100%;
+    }
+    .card-header {
+        opacity: 1;
+        padding-left: 2rem;
+        position: static;
+        font-size: 25px;
+    }
+    .card-header-container {
+        align-items: center;
     }
 }

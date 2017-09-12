@@ -23,13 +23,13 @@ class Portfolio extends React.Component{
     }
 
     render(){
-        const cards = items.map((item, index)=>{
+        const cards = items.map((item)=>{
             return (
             <Card 
                 item={item} 
                 onClick={this.toggleItem} 
-                reverse={index % 2 !== 0 ? true : false} //every other card should be image-top
-                key={'card-' + index}></Card>
+                key={item.id}
+                full={false}></Card>
                 );
             });
 
@@ -37,9 +37,15 @@ class Portfolio extends React.Component{
             <article className="flex card-wrapper">
                 {!this.state.openItem ? 
                     cards : 
-                    <Item item={this.state.openItem} onClick={this.closeItem} />}
-            </article>
-            );
+                    [<Card 
+                        item={this.state.openItem} 
+                        onClick={this.closeItem}
+                        full={true}
+                        key={this.state.openItem.id}/>,
+                    <Item item={this.state.openItem} />]
+                }
+            </article> 
+        )
     }
 }
 

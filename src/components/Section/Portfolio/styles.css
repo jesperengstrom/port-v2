@@ -10,3 +10,9 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 525px) {
+    .card-wrapper {
+        margin-left: 0;
+    }
+}

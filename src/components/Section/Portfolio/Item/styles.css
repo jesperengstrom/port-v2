@@ -1,12 +1,9 @@
 .portfolio-item {
     height: 100%;
     width: 100%;
-    background-color: white;
 }
 
 .portfolio-item-wrapper {
-    height: 100%;
-    width: 80%;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
+    margin-top: 1rem;
+    flex: 1;
 }

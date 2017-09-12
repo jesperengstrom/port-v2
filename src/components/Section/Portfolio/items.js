@@ -5,6 +5,7 @@ const node = 'img/node.jpg';
 export const items = [
     {
         name: 'Palmekartan',
+        id: 'item-6',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: ['Node', 'Express', 'MongoDb', 'Mongoose'],
@@ -15,6 +16,7 @@ export const items = [
     }, 
     {
         name: 'Talartoppen',
+        id: 'item-5',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: ['Node', 'Express', 'MongoDb', 'Mongoose'],
@@ -26,6 +28,7 @@ export const items = [
     },
     {
         name: 'Front end blog',
+        id: 'item-4',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: [node, 'Express', 'MongoDb', 'Mongoose'],
@@ -36,6 +39,7 @@ export const items = [
     },
     {
         name: 'JMDb',
+        id: 'item-3',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: [node, 'Express', 'MongoDb', 'Mongoose'],
@@ -46,6 +50,7 @@ export const items = [
     },
     {
         name: 'Asap Dev',
+        id: 'item-2',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: [node, 'Express', 'MongoDb', 'Mongoose'],
@@ -56,6 +61,7 @@ export const items = [
     },
     {
         name: 'Sänka skepp',
+        id: 'item-1',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: [node, 'Express', 'MongoDb', 'Mongoose'],
@@ -66,6 +72,7 @@ export const items = [
     },
     {
         name: 'Todo',
+        id: 'item-0',
         date: 'augusti 2017',
         description: 'En sajt om Palmemordet',
         tech: [node, 'Express', 'MongoDb', 'Mongoose'],

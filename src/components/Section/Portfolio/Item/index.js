@@ -7,11 +7,8 @@ import './styles.css';
 function Item({item, onClick}) {
     return (
         <div className='portfolio-item-wrapper'>
-            <div 
-                className='portfolio-item'>
-                    <h2>{item.name}
-                    </h2>
-                    <button onClick={onClick}>Stäng</button>
+            <div className='portfolio-item'>
+                {item.description}
             </div>
         </div>
     );
