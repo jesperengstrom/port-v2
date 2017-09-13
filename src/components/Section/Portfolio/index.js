@@ -1,4 +1,5 @@
 import React from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 //components
 import Card from './Card';
@@ -14,37 +15,40 @@ class Portfolio extends React.Component{
 
     state = {openItem: false};
 
-    toggleItem = (target) => {
-            this.setState({openItem: target})
+    openCard = (item) => {
+            this.setState({openItem: item})
     }
 
-    closeItem = () =>{
+    closeCard = () =>{
         this.setState({openItem: false})
     }
 
     render(){
-        const cards = items.map((item)=>{
-            return (
-            <Card 
-                item={item} 
-                onClick={this.toggleItem} 
-                key={item.id}
-                full={false}></Card>
-                );
-            });
+        const allCards = items.map((item)=>{
+            return (   
+                <Card 
+                    item={item} 
+                    onClick={this.openCard} 
+                    key={item.id}>
+                </Card>
+            );
+        });
 
         return(
-            <article className="flex card-wrapper">
-                {!this.state.openItem ? 
-                    cards : 
-                    [<Card 
-                        item={this.state.openItem} 
-                        onClick={this.closeItem}
-                        full={true}
-                        key={this.state.openItem.id}/>,
-                    <Item item={this.state.openItem} />]
-                }
-            </article> 
+                <CSSTransitionGroup
+                    className="flex card-wrapper"
+                    transitionName="example"
+                    transitionEnterTimeout={500}
+                    transitionLeaveTimeout={300}>
+                        {!this.state.openItem ? 
+                        allCards : 
+                        [<Card 
+                            item={this.state.openItem} 
+                            onClick={this.closeCard} 
+                            key={this.state.openItem.id} 
+                            opened/>,
+                        <Item key="openedItem" item={this.state.openItem} />]}
+                </CSSTransitionGroup>
         )
     }
 }

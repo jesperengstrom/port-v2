@@ -1,18 +1,43 @@
 .card-wrapper {
     flex-wrap: wrap;
     align-content: center;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    padding-left: 10%;
 }
 
-@media screen and (max-width: 1510px) {
+
+/* @media screen and (max-width: 1510px) {
     .card-wrapper {
         width: 100%;
     }
-}
+} */
 
 @media screen and (max-width: 525px) {
     .card-wrapper {
         margin-left: 0;
     }
+}
+
+
+/* react-transition-group */
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    /* opacity: 1; */
+    transform: translateX(-0%)
+}
+
+.example-leave.example-leave-active {
+    /* opacity: 0.01; */
+    /* transition: opacity 300ms ease-in; */
+    transition: transform 0.5s ease-in;
+    transform: translateX(-300%)
 }
