@@ -8,9 +8,9 @@ import './styles.css';
 import sections from './sections';
 
 //my components
-import Main from './Main';
-import Section from './Section';
-import Nav from './Nav';
+import Main from './Main/Main';
+import Section from './Section/Section';
+import Nav from './Nav/Nav';
 
 class App extends Component {
 

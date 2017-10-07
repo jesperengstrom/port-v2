@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //CSS
-import './styles.css';
+import './SectionHeader.css';
 
 //libraries
 import VisibilitySensor from 'react-visibility-sensor';

@@ -1,0 +1,21 @@
+.card-wrapper {
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 525px) {
+    .card-wrapper {
+        margin-left: 0;
+    }
+}
+
+.double-width {
+    width: 200%;
+    transition: transform 2s ease;
+}
+
+.move-left {
+    transform: translateX(-50%);
+}

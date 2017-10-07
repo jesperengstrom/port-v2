@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Scrollchor from 'react-scrollchor';
 
 //CSS
-import './styles.css';
+import './Nav.css';
 
 function Nav({ next, last }){
 
@@ -29,7 +29,7 @@ function Nav({ next, last }){
     }
 
 Nav.propTypes = {
-    next: PropTypes.string.isRequired,
+    next: PropTypes.string,
     last: PropTypes.bool.isRequired
 };
 

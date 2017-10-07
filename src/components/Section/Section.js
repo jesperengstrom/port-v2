@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //components
-import SectionHeader from './SectionHeader';
-import Portfolio from './Portfolio';
-import Hero from './Hero';
-import About from './About';
+import SectionHeader from './SectionHeader/SectionHeader';
+import Portfolio from './Portfolio/Portfolio';
+import Hero from './Hero/Hero';
+import About from './About/About';
 
 //libraries
 import VisibilitySensor from 'react-visibility-sensor';
 
 //CSS
-import './styles.css';
+import './Section.css';
 
 function Section({ section, setSection}){
     //sets current section in app.kjs

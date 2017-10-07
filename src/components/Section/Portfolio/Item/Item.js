@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //CSS
-import './styles.css';
+import './Item.css';
 
 function Item({item, onClick}) {
     return (
@@ -15,7 +15,7 @@ function Item({item, onClick}) {
 }
 
 Item.propTypes = {
-    item: PropTypes.obj,
+    item: PropTypes.object,
     onClick: PropTypes.func
 };
 

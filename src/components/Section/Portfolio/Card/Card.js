@@ -2,19 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //CSS
-import './styles.css';
+import './Card.css';
 
-function Card({item, onClick, opened}) {
+function Card({item, openCard}) {
     const thumb = require('./img/thumb/' + item.img);
         return (
             <div 
-                className={`card-container ${opened ? 'card-container-height' : ''}`} 
-                onClick={()=>onClick(item)}>
+                className="card-container pointer" 
+                onClick={()=>openCard(item)}>
                 <div 
-                    className={`overlay flex ${opened ? 'overlay-visible' : ''}`} 
+                    className="overlay flex"
                     style={{backgroundColor:item.color}}>
                     <header className="card-header-container flex">
-                        <h3 className={`card-header ${opened ? 'header-visible' : ''}`}>
+                        <h3 className="card-header white">
                             {item.name}
                         </h3>
                     </header> 
@@ -28,6 +28,5 @@ export default Card;
 
 Card.propTypes = {
     item: PropTypes.object.isRequired, 
-    onClick: PropTypes.func.isRequired,
-    opened: PropTypes.bool
+    openCard: PropTypes.func.isRequired,
 };

@@ -42,6 +42,12 @@ body,
     vertical-align: middle;
 }
 
+.small-icon {
+    font-size: 3rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 
 /* headers */
 
@@ -100,6 +106,20 @@ h4 {
 
 .p-2 {
     padding: 2rem;
+}
+
+
+/* COLORS */
+
+.white {
+    color: white;
+}
+
+
+/* MISC */
+
+.pointer {
+    cursor: pointer;
 }
 
 
