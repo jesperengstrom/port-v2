@@ -1,9 +1,36 @@
-.portfolio-item {
-    height: 100%;
-    width: 100%;
-}
-
 .portfolio-item-wrapper {
     margin-top: 1rem;
     flex: 1;
+}
+
+.portfolio-item {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.item-text {
+    font-family: 'Neuzeit S LT Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.item-date {
+    position: fixed;
+    left: 50%;
+    font-weight: bold;
+}
+
+.item-underline {
+    height: 0.2rem;
+    width: 100%;
+    background-color: rgb(51, 51, 70);
+    margin-bottom: 1em;
+}
+
+.thin-underline {
+    height: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.dev-icon-size {
+    font-size: 30px;
 }

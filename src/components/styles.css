@@ -97,6 +97,10 @@ h4 {
     justify-content: center;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 
 /* PADDING & MARGIN */
 
@@ -106,6 +110,22 @@ h4 {
 
 .p-2 {
     padding: 2rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-7 {
+    margin-left: 7rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
 }
 
 
@@ -120,6 +140,10 @@ h4 {
 
 .pointer {
     cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
