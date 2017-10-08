@@ -31,6 +31,16 @@
     background-color: rgba(0, 0, 0, 0.53);
 }
 
-.dev-icon-size {
-    font-size: 30px;
+.dev-icon {
+    font-size: 30px !important;
+    margin-right: 5px;
+}
+
+.item-link {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.item-link:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
 }

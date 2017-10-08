@@ -10,8 +10,8 @@ function Item({item, onClick}) {
     function renderTools() {
         const tools = item.tools.map((el) => {
             return (
-                <span key={el} className="flex">
-                    <span className="dev-icon-size">
+                <span key={el} className="flex mr-1 ml-1 mb-1">
+                    <span className="dev-icon">
                         {iconFinder(el)}
                     </span>
                     <span>
@@ -34,6 +34,26 @@ function Item({item, onClick}) {
             case 'MongoDB':
             icon = 'icon-mongodb';
             break;
+            case 'SASS':
+            icon = 'icon-sass';
+            break;
+            case 'Gulp':
+            icon = 'icon-gulp';
+            break;
+            case 'jQuery':
+            icon = 'icon-jquery';
+            break;
+            case 'Bootstrap':
+            icon = 'icon-bootstrap';
+            break;
+            case 'MySQL':
+            icon = 'icon-mysql';
+            break;
+            case 'PHP':
+            icon = 'icon-php';
+            break;
+            default:
+            break;
         }
 
         if (icon) {
@@ -50,13 +70,26 @@ function Item({item, onClick}) {
                 {item.description}
             </div>
             <div className="item-underline"></div>
-            <div className="portfolio-item">
-                <p className="flex justify-between">
-                    <span className="bold flex mr-1">Byggd med </span>
+            <div className="flex">
+                <p className="bold flex mr-1 nowrap">Byggd med </p>
+                <p className="flex flex-wrap">
                     {renderTools()}
                 </p>
             </div>
             <div className="item-underline thin-underline"></div>
+            <div className="portfolio-item flex">
+                <a href={item.url} target="_blank" className="item-link bold">
+                    <p>
+                        <i className="icon anticon">&#xe61b;</i>
+                        Till sajten
+                    </p>
+                </a>
+                <a href={item.repo} target="_blank" className="item-link">
+                    <p className="ml-1">
+                        <i className="icon anticon dev-icon">&#xe6ad;</i>
+                    </p>
+                </a>
+            </div>
         </div>
         
     );
