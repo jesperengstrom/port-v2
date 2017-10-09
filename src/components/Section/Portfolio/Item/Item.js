@@ -26,7 +26,17 @@ function Item({item, onClick}) {
         let icon = false;
         switch (tool) {
             case 'JavaScript':
+            case 'ES6':
             icon = 'icon-javascript';
+            break;
+            case 'HTML':
+            icon = 'icon-html5';
+            break;
+            case 'CSS':
+            icon = 'icon-css3';
+            break;
+            case 'Git':
+            icon = 'icon-git';
             break;
             case 'Node.js':
             icon = 'icon-nodejs';
