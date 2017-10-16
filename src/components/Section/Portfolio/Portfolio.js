@@ -43,7 +43,7 @@ class Portfolio extends React.Component{
                     {allCards}
                 </div>
                 <div className="flex card-wrapper">
-                    <Item item={this.state.openItem} />
+                    <Item item={this.state.openItem} isOpen={this.state.isOpen} />
                     <aside className="flex flex-column ml-7">
                     <Opencard 
                         item={this.state.openItem} 

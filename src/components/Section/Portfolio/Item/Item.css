@@ -17,6 +17,7 @@
     position: fixed;
     left: 50%;
     font-weight: bold;
+    transition: opacity 2s ease;
 }
 
 .item-underline {

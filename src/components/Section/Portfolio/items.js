@@ -4,6 +4,17 @@ import React from 'react';
 
 export const items = [
     {
+        name: 'LuffarschApp',
+        id: 'item-7',
+        date: 'sept 2017',
+        description: <span><p>LuffarschApp är en webbapp byggd i React där man kan utmana och spela luffarschack mot andra användare.</p><p>Spelet, liksom vilka spelare som är online, status på ens spel och topplistan uppdateras dynamiskt i realtid.</p></span>,
+        tools: ['React', 'Firebase', 'Styled Components', 'Semantic UI'],
+        url: 'https://jesperengstrom.github.io/luffarschapp/',
+        repo: 'https://github.com/jesperengstrom/luffarschapp',
+        img: 'luffarschapp.jpg',
+        color: 'rgb(82, 126, 124)'
+    },
+    {
         name: 'Palmekartan',
         id: 'item-6',
         date: 'augusti 2017',
@@ -41,7 +52,7 @@ export const items = [
         name: 'JMDb',
         id: 'item-3',
         date: 'mars 2017',
-        description: <span><p>JMDb är en filmdatabas där det går att lägga till, söka efter, sortera och betygsätta filmer.</p><p>I denna uppgift låg fokus på att hantera JSON-objekt och implementera designmönster; <em>module pattern</em> och <em>revealing module pattern</em> i detta fall.</p></span>,
+        description: <span><p>JMDb är en filmdatabas där det går att lägga till, söka efter, sortera och betygsätta filmer.</p><p>Här låg fokus på att hantera JSON-objekt och implementera designmönster; <em>module pattern</em> och <em>revealing module pattern</em> i detta fall.</p></span>,
         tools: ['JavaScript', 'Bootstrap'],
         url: 'https://jesperengstrom.github.io/JMDb/',
         repo: 'https://github.com/jesperengstrom/JMDb',
@@ -52,7 +63,7 @@ export const items = [
         name: 'Asap Dev',
         id: 'item-2',
         date: 'januari 2017',
-        description: <span><p>En sajt till den fiktiva webbyrån Asap Development.</p><p>I den här gruppuppgiften var fokus att bygga en responsiv sajt helt utan ramvverk utifrån en designskiss, därefter återskapa sajten med ett ramverk.</p><p>Det var också en övning i att jobba agilt och versionshantera med Git.</p></span>,
+        description: <span><p>En sajt till den fiktiva webbyrån Asap Development.</p><p>Den här gruppuppgiften gick ut på att bygga en responsiv sajt helt utan ramvverk utifrån en designskiss, därefter återskapa sajten med ett ramverk.</p><p>Det var också en övning i att jobba agilt och versionshantera med Git.</p></span>,
         tools: ['HTML', 'CSS', 'Adobe InDesign', 'SASS', 'Bootstrap', 'Git'],
         url: 'https://danteuh.github.io/asap-development/',
         repo: 'https://github.com/DanteUh/asap-development/',
@@ -63,24 +74,13 @@ export const items = [
         name: 'Sänka skepp',
         id: 'item-1',
         date: 'dec 2016',
-        description: <span><p>Ett sänka skepp-spel som jag gjorde för att det verkade kul.</p></span>,
+        description: <span><p>Ett sänka skepp-spel som jag gjorde för skojs skull.</p></span>,
         tools: ['JavaScript'],
         url: 'https://jesperengstrom.github.io/battleship/',
         repo: 'https://github.com/jesperengstrom/battleship',
         img: 'sanka-skepp.jpg',
         color: 'rgb(75, 114, 155)'
-    },
-    {
-        name: 'Todo',
-        id: 'item-0',
-        date: 'augusti 2017',
-        description: 'En sajt om Palmemordet',
-        tools: ['node', 'Express', 'MongoDb', 'Mongoose'],
-        url: 'http://http://palmekartan.cloudno.de/',
-        repo: 'http://github.com',
-        img: 'todo.jpg',
-        color: 'rgb(82, 126, 124)'
-    },
+    }
 ];
 
 

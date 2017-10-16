@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './Item.css';
 import '../../../../font/font-mfizz-2.4.1/font-mfizz.css';
 
-function Item({item, onClick}) {
+function Item({item, onClick, isOpen}) {
 
     function renderTools() {
         const tools = item.tools.map((el) => {
@@ -62,6 +62,9 @@ function Item({item, onClick}) {
             case 'PHP':
             icon = 'icon-php';
             break;
+            case 'React':
+            icon = 'icon-reactjs';
+            break;
             default:
             break;
         }
@@ -73,7 +76,7 @@ function Item({item, onClick}) {
 
     return (
         <div className='portfolio-item-wrapper item-text'>
-            <div className="item-date ml-7">
+            <div className={`item-date ml-7 ${isOpen ? 'opacity' : 'no-opacity'}`}>
                 <p>{item.date}</p>
             </div>
             <div className='portfolio-item'>

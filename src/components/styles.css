@@ -154,6 +154,14 @@ h4 {
     white-space: nowrap;
 }
 
+.opacity {
+    opacity: 100%;
+}
+
+.no-opacity {
+    opacity: 0;
+}
+
 
 /* BG TRANSITIONS */
 
