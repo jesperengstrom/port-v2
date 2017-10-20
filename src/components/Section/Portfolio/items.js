@@ -6,7 +6,7 @@ export const items = [
     {
         name: 'LuffarschApp',
         id: 'item-7',
-        date: 'sept 2017',
+        date: 'Sept 2017',
         description: <span><p>LuffarschApp är en webbapp byggd i React där man kan utmana och spela luffarschack mot andra användare.</p><p>Spelet, liksom vilka spelare som är online, status på ens spel och topplistan uppdateras dynamiskt i realtid.</p></span>,
         tools: ['React', 'Firebase', 'Styled Components', 'Semantic UI'],
         url: 'https://jesperengstrom.github.io/luffarschapp/',
@@ -28,7 +28,7 @@ export const items = [
     {
         name: 'Talartoppen',
         id: 'item-5',
-        date: 'april 2017',
+        date: 'April 2017',
         description: <span><p>Talartoppen använder Riksdagens öppna API för att räkna ut vilka riksdagsledamöter som varit mest aktiva under debatterna i kammaren.</p><p>Det går även att skapa topp- och bottenlistor för de olika partierna och jämförande statistik partierna emellan.</p></span>,
         tools: ['Ajax', 'jQuery', 'Bootstrap', 'Gulp', 'SASS'],
         url: 'https://jesperengstrom.github.io/Talartoppen/',
@@ -40,8 +40,8 @@ export const items = [
     {
         name: 'Front end blog',
         id: 'item-4',
-        date: 'maj 2017',
-        description: <span><p>En blogg och bloggplattform/CMS byggd från grunden i PHP.</p><p>Inloggade användare kan posta, redigera och gilla inlägg samt redigera sin profil m.m.</p></span>,
+        date: 'Maj 2017',
+        description: <span><p>En blogg och bloggplattform/CMS byggd från grunden i PHP.</p><p>Inloggade användare kan posta, redigera och gilla inlägg, redigera sin profil m.m.</p></span>,
         tools: ['PHP', 'MySQL'],
         url: 'http://phpgrupp.heliohost.org',
         repo: 'https://github.com/phpgrupp/simple-cms',
@@ -51,7 +51,7 @@ export const items = [
     {
         name: 'JMDb',
         id: 'item-3',
-        date: 'mars 2017',
+        date: 'Mars 2017',
         description: <span><p>JMDb är en filmdatabas där det går att lägga till, söka efter, sortera och betygsätta filmer.</p><p>Här låg fokus på att hantera JSON-objekt och implementera designmönster; <em>module pattern</em> och <em>revealing module pattern</em> i detta fall.</p></span>,
         tools: ['JavaScript', 'Bootstrap'],
         url: 'https://jesperengstrom.github.io/JMDb/',
@@ -62,7 +62,7 @@ export const items = [
     {
         name: 'Asap Dev',
         id: 'item-2',
-        date: 'januari 2017',
+        date: 'Januari 2017',
         description: <span><p>En sajt till den fiktiva webbyrån Asap Development.</p><p>Den här gruppuppgiften gick ut på att bygga en responsiv sajt helt utan ramvverk utifrån en designskiss, därefter återskapa sajten med ett ramverk.</p><p>Det var också en övning i att jobba agilt och versionshantera med Git.</p></span>,
         tools: ['HTML', 'CSS', 'Adobe InDesign', 'SASS', 'Bootstrap', 'Git'],
         url: 'https://danteuh.github.io/asap-development/',
@@ -73,7 +73,7 @@ export const items = [
     {
         name: 'Sänka skepp',
         id: 'item-1',
-        date: 'dec 2016',
+        date: 'Dec 2016',
         description: <span><p>Ett sänka skepp-spel som jag gjorde för skojs skull.</p></span>,
         tools: ['JavaScript'],
         url: 'https://jesperengstrom.github.io/battleship/',

@@ -48,12 +48,36 @@ body,
     vertical-align: middle;
 }
 
+@media screen and (max-width: 700px) {
+    .large-icon {
+        font-size: 4rem;
+    }
+    .small-icon {
+        font-size: 2rem;
+    }
+}
+
 
 /* headers */
 
 h2 {
     font-family: 'Neuzeit S LT Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 36px;
+    line-height: 54px;
+}
+
+@media screen and (max-width: 1050px) {
+    h2 {
+        font-size: 30px;
+        line-height: 45px !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h2 {
+        font-size: 26px;
+        line-height: 39px !important;
+    }
 }
 
 h3 {
@@ -112,6 +136,10 @@ h4 {
     padding: 2rem;
 }
 
+.pl-2 {
+    padding-left: 2rem;
+}
+
 .mr-1 {
     margin-right: 1rem;
 }
@@ -120,8 +148,16 @@ h4 {
     margin-left: 1rem;
 }
 
+.ml-2 {
+    margin-left: 2rem;
+}
+
 .ml-7 {
     margin-left: 7rem;
+}
+
+.mt-0 {
+    margin-top: 0;
 }
 
 .mb-1 {

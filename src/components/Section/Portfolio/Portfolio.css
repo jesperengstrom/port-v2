@@ -1,15 +1,35 @@
 .card-wrapper {
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-start;
     width: 100%;
+}
+
+
+/* portfolio open/closed margins */
+
+.closedcards-ml {
+    padding-left: 7%;
+    transition: padding-left 0.5s ease;
+}
+
+@media screen and (max-width: 1150px) {
+    .closedcards-ml {
+        padding-left: 2%;
+    }
+}
+
+.opencard-ml {
     padding-left: 10%;
 }
 
-@media screen and (max-width: 525px) {
-    .card-wrapper {
-        margin-left: 0;
+@media screen and (max-width: 1150px) {
+    .opencard-ml {
+        padding-left: 2%;
     }
 }
+
+
+/* // */
 
 .double-width {
     width: 200%;

@@ -1,20 +1,8 @@
 .nav {
     flex: inherit;
-    width: 10%;
-    min-width: 50px;
+    width: 15%;
+    /* min-width: 50px; */
 }
-
-
-/* icons  */
-
-
-/* .icon-mail:after {
-    content: "\e659";
-}
-
-.icon-arrowdown:before {
-    content: "\e619";
-} */
 
 
 /* icon positions */

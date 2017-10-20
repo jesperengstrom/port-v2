@@ -15,9 +15,20 @@
 
 .item-date {
     position: fixed;
+    padding-left: 2rem;
+    margin-left: 2rem;
     left: 50%;
     font-weight: bold;
     transition: opacity 2s ease;
+}
+
+@media screen and (max-width: 1150px) {
+    .item-date {
+        position: initial;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
 }
 
 .item-underline {
@@ -35,6 +46,12 @@
 .dev-icon {
     font-size: 30px !important;
     margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .dev-icon {
+        font-size: 26px !important;
+    }
 }
 
 .item-link {

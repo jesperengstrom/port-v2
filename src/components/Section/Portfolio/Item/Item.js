@@ -76,7 +76,7 @@ function Item({item, onClick, isOpen}) {
 
     return (
         <div className='portfolio-item-wrapper item-text'>
-            <div className={`item-date ml-7 ${isOpen ? 'opacity' : 'no-opacity'}`}>
+            <div className={`item-date ${isOpen ? 'opacity' : 'no-opacity'}`}>
                 <p>{item.date}</p>
             </div>
             <div className='portfolio-item'>
