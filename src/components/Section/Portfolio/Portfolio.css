@@ -5,16 +5,22 @@
 }
 
 .closedcards-wrapper {
+    width: 80%;
     padding-left: 7%;
     transition: padding-left 0.5s ease;
 }
 
 .opencard-wrapper {
+    width: 80%;
     padding-left: 10%;
 }
 
 .opencard-container {
     margin-left: 7rem;
+}
+
+.gutter {
+    width: 15%;
 }
 
 
@@ -26,19 +32,17 @@
 }
 
 .move-left {
-    transform: translateX(-50%);
+    transform: translateX(-55%);
 }
 
 @media screen and (max-width: 1150px) {
-    .closedcards-wrapper {
-        padding-left: 2%;
-    }
+    .closedcards-wrapper,
     .opencard-wrapper {
-        padding-left: 2%;
+        padding: 0 3% 0 3%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     .opencard-wrapper {
         flex-direction: column-reverse;
     }
@@ -46,6 +50,8 @@
         margin-left: 0;
     }
 }
+
+@media screen and (max-width: 700px) {}
 
 @media screen and (max-width: 400px) {
     .move-left {

@@ -42,6 +42,7 @@ class Portfolio extends React.Component{
                 <div className="flex card-wrapper closedcards-wrapper">
                     {allCards}
                 </div>
+                <span className="gutter"></span>
                 <div className="flex card-wrapper opencard-wrapper">
                     <Item item={this.state.openItem} isOpen={this.state.isOpen} />
                     <aside className="flex flex-column opencard-container">

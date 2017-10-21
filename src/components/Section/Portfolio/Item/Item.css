@@ -15,9 +15,8 @@
 
 .item-date {
     position: fixed;
-    padding-left: 2rem;
     margin-left: 2rem;
-    left: 50%;
+    left: 55%;
     font-weight: bold;
     transition: opacity 2s ease;
 }
@@ -57,14 +56,17 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .tools-wrapper {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .portfolio-item-wrapper {
         margin-left: 2rem;
     }
     .dev-icon {
         font-size: 26px !important;
-    }
-    .tools-wrapper {
-        flex-direction: column;
     }
 }

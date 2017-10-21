@@ -6,7 +6,7 @@ export const items = [
     {
         name: 'LuffarschApp',
         id: 'item-7',
-        date: 'Sept 2017',
+        date: 'September 2017',
         description: <span><p>LuffarschApp är en webbapp byggd i React där man kan utmana och spela luffarschack mot andra användare.</p><p>Spelet, liksom vilka spelare som är online, status på ens spel och topplistan uppdateras dynamiskt i realtid.</p></span>,
         tools: ['React', 'Firebase', 'Styled Components', 'Semantic UI'],
         url: 'https://jesperengstrom.github.io/luffarschapp/',
@@ -17,7 +17,7 @@ export const items = [
     {
         name: 'Palmekartan',
         id: 'item-6',
-        date: 'augusti 2017',
+        date: 'Augusti 2017',
         description: <span><p>Palmekartan är ett försök att visualisera vittnesiakttagelser kring mordet på Olof Palme 1986 genom att placera ut dem på en tidslinje och en karta tillsammans med källhänvisningar.</p><p>Intresserade privatspanare kan själva bidra genom att logga in och posta eller redigera information.</p></span>,
         tools: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'ES6'],
         url: 'http://palmekartan.cloudno.de/',
@@ -73,7 +73,7 @@ export const items = [
     {
         name: 'Sänka skepp',
         id: 'item-1',
-        date: 'Dec 2016',
+        date: 'December 2016',
         description: <span><p>Ett sänka skepp-spel som jag gjorde för skojs skull.</p></span>,
         tools: ['JavaScript'],
         url: 'https://jesperengstrom.github.io/battleship/',

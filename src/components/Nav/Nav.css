@@ -1,7 +1,10 @@
 .nav {
     flex: inherit;
     width: 15%;
-    /* min-width: 50px; */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
 }
 
 
