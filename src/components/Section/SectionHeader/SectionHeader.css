@@ -11,6 +11,21 @@
     transition: width 3s ease-out;
 }
 
+@media screen and (max-width: 1050px) {
+    .section-header-underline {
+        height: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section-header-frame {
+        padding-left: 4%;
+    }
+    .section-header-underline {
+        height: 0.3rem;
+    }
+}
+
 .underline-long {
     width: 220px;
 }

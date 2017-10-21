@@ -4,32 +4,21 @@
     width: 100%;
 }
 
-
-/* portfolio open/closed margins */
-
-.closedcards-ml {
+.closedcards-wrapper {
     padding-left: 7%;
     transition: padding-left 0.5s ease;
 }
 
-@media screen and (max-width: 1150px) {
-    .closedcards-ml {
-        padding-left: 2%;
-    }
-}
-
-.opencard-ml {
+.opencard-wrapper {
     padding-left: 10%;
 }
 
-@media screen and (max-width: 1150px) {
-    .opencard-ml {
-        padding-left: 2%;
-    }
+.opencard-container {
+    margin-left: 7rem;
 }
 
 
-/* // */
+/* transition open/closed cards */
 
 .double-width {
     width: 200%;
@@ -38,4 +27,28 @@
 
 .move-left {
     transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1150px) {
+    .closedcards-wrapper {
+        padding-left: 2%;
+    }
+    .opencard-wrapper {
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .opencard-wrapper {
+        flex-direction: column-reverse;
+    }
+    .opencard-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .move-left {
+        transform: translateX(-55%);
+    }
 }

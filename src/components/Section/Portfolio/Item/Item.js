@@ -83,7 +83,7 @@ function Item({item, onClick, isOpen}) {
                 {item.description}
             </div>
             <div className="item-underline"></div>
-            <div className="flex">
+            <div className="flex tools-wrapper">
                 <p className="bold flex mr-1 nowrap">Byggd med </p>
                 <p className="flex flex-wrap">
                     {renderTools()}

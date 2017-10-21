@@ -39,12 +39,12 @@ class Portfolio extends React.Component{
 
         return(
             <span className={`flex flex-row double-width ${this.state.isOpen ? 'move-left' : '' }`}>
-                <div className="flex card-wrapper closedcards-ml">
+                <div className="flex card-wrapper closedcards-wrapper">
                     {allCards}
                 </div>
-                <div className="flex card-wrapper opencard-ml">
+                <div className="flex card-wrapper opencard-wrapper">
                     <Item item={this.state.openItem} isOpen={this.state.isOpen} />
-                    <aside className="flex flex-column ml-7">
+                    <aside className="flex flex-column opencard-container">
                     <Opencard 
                         item={this.state.openItem} 
                         closeCard={this.closeCard}/>
