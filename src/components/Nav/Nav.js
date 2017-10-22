@@ -10,7 +10,7 @@ import './Nav.css';
 function Nav({ next, last }){
 
     return (
-        <div className="nav flex justify-center">
+        <nav className="nav flex justify-center">
             <div className='fixed fixed-top'>
                 <a href="mailto:jengstro@gmail.com">
                     <i className="anticon large-icon">&#xe659;</i>
@@ -24,7 +24,7 @@ function Nav({ next, last }){
                         <i className="anticon large-icon">&#xe619;</i>
                 </Scrollchor>
             </div>
-        </div>
+        </nav>
         );
     }
 

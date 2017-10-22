@@ -71,12 +71,6 @@ h3 {
     font-size: 26px;
 }
 
-
-/* h4 {
-    font-family: 'Neuzeit S LT Book', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-} */
-
 @media screen and (max-width: 1050px) {
     p {
         font-size: 20px;

@@ -1,5 +1,4 @@
 .portfolio-item-wrapper {
-    margin-top: 1rem;
     flex: 1;
 }
 
@@ -14,11 +13,8 @@
 }
 
 .item-date {
-    position: fixed;
-    margin-left: 2rem;
-    left: 55%;
-    font-weight: bold;
-    transition: opacity 2s ease;
+    padding-right: 3rem;
+    white-space: nowrap;
 }
 
 .item-link {
@@ -47,17 +43,15 @@
     margin-right: 5px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1050px) {
     .item-date {
         position: initial;
         padding-left: 0;
         margin-left: 0;
         margin-bottom: 1rem;
     }
-}
-
-@media screen and (max-width: 900px) {
-    .tools-wrapper {
+    .tools-wrapper,
+    .portfolio-item-wrapper {
         flex-direction: column;
     }
 }

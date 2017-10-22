@@ -2,7 +2,6 @@ import React from 'react';
 
 //components
 import Card from './Card/Card';
-import Opencard from './Card/Opencard';
 import Item from './Item/Item';
 
 //data
@@ -43,14 +42,10 @@ class Portfolio extends React.Component{
                     {allCards}
                 </div>
                 <span className="gutter"></span>
-                <div className="flex card-wrapper opencard-wrapper">
-                    <Item item={this.state.openItem} isOpen={this.state.isOpen} />
-                    <aside className="flex flex-column opencard-container">
-                    <Opencard 
-                        item={this.state.openItem} 
-                        closeCard={this.closeCard}/>
-                    </aside>
-                </div>
+                <Item 
+                    item={this.state.openItem} 
+                    isOpen={this.state.isOpen} 
+                    closeCard={this.closeCard}/>
             </span>
         )
     }

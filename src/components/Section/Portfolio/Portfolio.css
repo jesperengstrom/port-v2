@@ -4,23 +4,16 @@
     width: 100%;
 }
 
-.closedcards-wrapper {
-    width: 80%;
-    padding-left: 7%;
+.closedcards-wrapper,
+.opencard-wrapper {
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 7%;
     transition: padding-left 0.5s ease;
 }
 
-.opencard-wrapper {
-    width: 80%;
-    padding-left: 10%;
-}
-
 .opencard-container {
-    margin-left: 7rem;
-}
-
-.gutter {
-    width: 15%;
+    margin-left: 2rem;
 }
 
 
@@ -28,33 +21,27 @@
 
 .double-width {
     width: 200%;
-    transition: transform 2s ease;
+    transition: transform 1.2s cubic-bezier(0.54, -0.01, 0.84, 1.12);
 }
 
 .move-left {
-    transform: translateX(-55%);
-}
-
-@media screen and (max-width: 1150px) {
-    .closedcards-wrapper,
-    .opencard-wrapper {
-        padding: 0 3% 0 3%;
-    }
+    transform: translateX(-50%);
 }
 
 @media screen and (max-width: 850px) {
     .opencard-wrapper {
         flex-direction: column-reverse;
+        padding-left: 2%;
+        padding-right: 10%
     }
     .opencard-container {
         margin-left: 0;
+        margin-bottom: 1rem;
     }
 }
 
-@media screen and (max-width: 700px) {}
-
-@media screen and (max-width: 400px) {
-    .move-left {
-        transform: translateX(-55%);
+@media screen and (max-width: 700px) {
+    .closedcards-wrapper {
+        padding-right: 10%;
     }
 }

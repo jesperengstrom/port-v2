@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Opencard from '../Card/Opencard';
+
 //CSS
 import './Item.css';
 import '../../../../font/font-mfizz-2.4.1/font-mfizz.css';
 
-function Item({item, onClick, isOpen}) {
+function Item({item, onClick, isOpen, closeCard}) {
 
     function renderTools() {
         const tools = item.tools.map((el) => {
@@ -75,35 +77,47 @@ function Item({item, onClick, isOpen}) {
     }
 
     return (
-        <div className='portfolio-item-wrapper item-text'>
-            <div className='item-date'>
-                <p>{item.date}</p>
+        <div className="flex card-wrapper opencard-wrapper">
+            <div className='flex portfolio-item-wrapper item-text'>
+                <div className='item-text item-date bold'>
+                    <p>{item.date}</p>
+                </div>
+                <div>
+                    <div className='portfolio-item'>
+                        {item.description}
+                    </div>
+                    <div className="item-underline"></div>
+                    <div className="flex tools-wrapper">
+                        <p className="bold flex mr-1 nowrap">Byggd med </p>
+                        <p className="flex flex-wrap">
+                            {renderTools()}
+                        </p>
+                    </div>
+                    <div className="item-underline thin-underline"></div>
+                    <div className="portfolio-item flex">
+                        <a href={item.url} target="_blank" className="item-link bold">
+                            <p>
+                                <i className="icon anticon">&#xe61b;</i>
+                                Till sajten
+                            </p>
+                        </a>
+                        <a href={item.repo} target="_blank" className="item-link">
+                            <p className="ml-1">
+                                <i className="icon anticon dev-icon">&#xe6ad;</i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className='portfolio-item'>
-                {item.description}
-            </div>
-            <div className="item-underline"></div>
-            <div className="flex tools-wrapper">
-                <p className="bold flex mr-1 nowrap">Byggd med </p>
-                <p className="flex flex-wrap">
-                    {renderTools()}
-                </p>
-            </div>
-            <div className="item-underline thin-underline"></div>
-            <div className="portfolio-item flex">
-                <a href={item.url} target="_blank" className="item-link bold">
-                    <p>
-                        <i className="icon anticon">&#xe61b;</i>
-                        Till sajten
-                    </p>
-                </a>
-                <a href={item.repo} target="_blank" className="item-link">
-                    <p className="ml-1">
-                        <i className="icon anticon dev-icon">&#xe6ad;</i>
-                    </p>
-                </a>
-            </div>
+            <aside className="flex flex-column opencard-container">
+                <Opencard 
+                    item={item} 
+                    closeCard={closeCard}/>
+            </aside>
         </div>
+
+
+
         
     );
 }
