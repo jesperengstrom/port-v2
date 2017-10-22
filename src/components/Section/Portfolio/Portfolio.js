@@ -12,17 +12,28 @@ import './Portfolio.css';
 
 class Portfolio extends React.Component{
 
+    componentDidMount() {
+        document.getElementById('double').addEventListener('transitionend', (e)=> {
+            //only select transitionend events on 'double-with'-element
+            let arr = Array.from(e.target.classList);
+            if (e.propertyName === 'transform' && arr.includes('double-width')) {
+                    let hidden = arr.includes('move-left') ? 'closedcards' : 'opencard';
+                    this.setState({hidden: hidden})
+            }})
+    }
+
     state = { 
         openItem: items[0],
-        isOpen: false 
+        isOpen: false,
+        hidden: false 
     };
 
     openCard = (item) => {
-            this.setState({openItem: item, isOpen: true})
+            this.setState({openItem: item, isOpen: true, hidden: false})
     }
 
     closeCard = () => {
-        this.setState({isOpen: false})
+        this.setState({isOpen: false, hidden: false})
     }
 
     render(){
@@ -37,12 +48,12 @@ class Portfolio extends React.Component{
         });
 
         return(
-            <span className={`flex flex-row double-width ${this.state.isOpen ? 'move-left' : '' }`}>
-                <div className="flex card-wrapper closedcards-wrapper">
+            <span id="double" className={`flex flex-row double-width ${this.state.isOpen ? 'move-left' : '' }`}>
+                <div className={`flex card-wrapper closedcards-wrapper ${this.state.hidden === 'closedcards' ? 'no-height' : ''}`}>
                     {allCards}
                 </div>
-                <span className="gutter"></span>
                 <Item 
+                    hidden={this.state.hidden}
                     item={this.state.openItem} 
                     isOpen={this.state.isOpen} 
                     closeCard={this.closeCard}/>

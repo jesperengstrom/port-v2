@@ -8,7 +8,6 @@ const sections = [
     {
       name: 'portfolio',
       style: { backgroundColor: 'rgba(94, 94, 175, 0.67)' }, 
-      // style: { backgroundColor: 'rgba(71, 151, 104, 0.32' },
       displayName: 'Portfolio',
     },
     {

@@ -193,6 +193,10 @@ h3 {
     white-space: nowrap;
 }
 
+.no-height {
+    height: 0 !important;
+}
+
 
 /* BG TRANSITIONS */
 

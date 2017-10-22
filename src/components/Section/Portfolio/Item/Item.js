@@ -7,7 +7,7 @@ import Opencard from '../Card/Opencard';
 import './Item.css';
 import '../../../../font/font-mfizz-2.4.1/font-mfizz.css';
 
-function Item({item, onClick, isOpen, closeCard}) {
+function Item({item, onClick, isOpen, closeCard, hidden}) {
 
     function renderTools() {
         const tools = item.tools.map((el) => {
@@ -77,7 +77,7 @@ function Item({item, onClick, isOpen, closeCard}) {
     }
 
     return (
-        <div className="flex card-wrapper opencard-wrapper">
+        <div className={`flex card-wrapper opencard-wrapper ${hidden === 'opencard' ? 'no-height' : ''}`}>
             <div className='flex portfolio-item-wrapper item-text'>
                 <div className='item-text item-date bold'>
                     <p>{item.date}</p>
