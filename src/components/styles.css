@@ -206,4 +206,7 @@ h3 {
     -webkit-transition: background-color 2s ease;
     -moz-transition: background-color 2s ease;
     transition: background-color 2s ease;
+    /* no padding on bottom of page */
+    padding-bottom: 0;
+    padding-top: 0;
 }

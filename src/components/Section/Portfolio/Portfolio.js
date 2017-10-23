@@ -25,7 +25,7 @@ class Portfolio extends React.Component{
     state = { 
         openItem: items[0],
         isOpen: false,
-        hidden: false 
+        hidden: 'opencard' 
     };
 
     openCard = (item) => {
@@ -48,7 +48,7 @@ class Portfolio extends React.Component{
         });
 
         return(
-            <span id="double" className={`flex flex-row double-width ${this.state.isOpen ? 'move-left' : '' }`}>
+            <article id="double" className={`flex flex-row double-width ${this.state.isOpen ? 'move-left' : '' }`}>
                 <div className={`flex card-wrapper closedcards-wrapper ${this.state.hidden === 'closedcards' ? 'no-height' : ''}`}>
                     {allCards}
                 </div>
@@ -57,7 +57,7 @@ class Portfolio extends React.Component{
                     item={this.state.openItem} 
                     isOpen={this.state.isOpen} 
                     closeCard={this.closeCard}/>
-            </span>
+            </article>
         )
     }
 }

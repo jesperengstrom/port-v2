@@ -1,0 +1,9 @@
+.about-link {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: underline;
+}
+
+.about-link:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}

@@ -96,14 +96,15 @@ function Item({item, onClick, isOpen, closeCard, hidden}) {
                     <div className="item-underline thin-underline"></div>
                     <div className="portfolio-item flex">
                         <a href={item.url} target="_blank" className="item-link bold">
-                            <p>
+                            <p className="nowrap">
                                 <i className="icon anticon">&#xe61b;</i>
                                 Till sajten
                             </p>
                         </a>
-                        <a href={item.repo} target="_blank" className="item-link">
-                            <p className="ml-1">
-                                <i className="icon anticon dev-icon">&#xe6ad;</i>
+                        <a href={item.repo} target="_blank" className="item-link bold">
+                            <p className="ml-1 nowrap">
+                                <i className="icon anticon dev-icon">&#xe6ad;</i> GitHub 
+                                
                             </p>
                         </a>
                     </div>
