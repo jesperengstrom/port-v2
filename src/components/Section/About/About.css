@@ -1,3 +1,19 @@
+.about-wrapper {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 14%;
+    margin-bottom: 2rem;
+}
+
+.about-text-container {
+    padding-left: 15%;
+    width: 50%;
+}
+
+.about-img-container {
+    width: 50%;
+}
+
 .about-link {
     color: rgba(0, 0, 0, 0.87);
     text-decoration: underline;
@@ -6,4 +22,29 @@
 .about-link:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1050px) {
+    .about-wrapper {
+        padding-left: 2rem;
+    }
+    .about-text-container {
+        padding-left: 0rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-wrapper {
+        padding-right: 20%;
+    }
+    .about-text-container {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-wrapper {
+        padding-left: 4%;
+    }
 }
