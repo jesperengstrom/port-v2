@@ -29,6 +29,7 @@ class Portfolio extends React.Component{
     };
 
     openCard = (item) => {
+            document.querySelector('#portfolio').scrollIntoView({ behavior: 'smooth' });
             this.setState({openItem: item, isOpen: true, hidden: false})
     }
 

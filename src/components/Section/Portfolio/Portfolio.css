@@ -48,4 +48,7 @@
     .closedcards-wrapper {
         padding-right: 10%;
     }
+    .double-width {
+        transition: transform 0.9s cubic-bezier(0.54, -0.01, 0.84, 1.12);
+    }
 }

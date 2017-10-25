@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//libs
-import Scrollchor from 'react-scrollchor';
-
 //CSS
 import './Nav.css';
 
+//Smooth scroll polyfill
+require('smoothscroll-polyfill').polyfill();
+
 function Nav({ next, last }){
+
+    function scrollTo(){
+        document.querySelector('#' + next).scrollIntoView({ behavior: 'smooth' });
+    }
 
     return (
         <nav className="nav flex justify-center">
@@ -17,12 +21,9 @@ function Nav({ next, last }){
                 </a>
             </div>
             <div className="fixed fixed-bottom flex align-end p-1" style={{height:'33%'}}>
-                <Scrollchor 
-                    to={next}
-                    animate={{ offset: 0, duration: 700}} 
-                    className={`transition-flip ${last ? 'flip' : ''}`}>
-                        <i className="anticon large-icon">&#xe619;</i>
-                </Scrollchor>
+            <a onClick={scrollTo} className={`transition-flip ${last ? 'flip' : ''}`}>
+                <i className="anticon large-icon">&#xe619;</i>
+            </a>
             </div>
         </nav>
         );

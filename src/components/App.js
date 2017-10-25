@@ -39,7 +39,6 @@ class App extends Component {
       next: next,
       last: last
     })
-    console.log('current section ' + this.state.currentSection.name);
   }
 
 
