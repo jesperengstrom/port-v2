@@ -27,6 +27,8 @@
 
 .about-img {
     width: 100%;
+    position: relative;
+    bottom: 19px;
 }
 
 .about-link {

@@ -29,7 +29,7 @@ export const items = [
         name: 'Talartoppen',
         id: 'item-5',
         date: 'April 2017',
-        description: <span><p>Talartoppen använder Riksdagens öppna API för att räkna ut vilka riksdagsledamöter som varit mest aktiva under debatterna i kammaren.</p><p>Det går även att skapa topp- och bottenlistor för de olika partierna och jämförande statistik partierna emellan.</p></span>,
+        description: <span><p>Talartoppen använder Riksdagens öppna API för att räkna ut vilka riksdagsledamöter som varit mest aktiva i debatterna i kammaren.</p><p>Det går även att skapa topp- och bottenlistor för de olika partierna och jämförande statistik partierna emellan.</p></span>,
         tools: ['Ajax', 'jQuery', 'Bootstrap', 'Gulp', 'SASS'],
         url: 'https://jesperengstrom.github.io/Talartoppen/',
         repo: 'https://github.com/jesperengstrom/Talartoppen',
@@ -43,7 +43,7 @@ export const items = [
         date: 'Maj 2017',
         description: <span><p>En blogg och bloggplattform/CMS byggd från grunden i PHP.</p><p>Inloggade användare kan posta, redigera och gilla inlägg, redigera sin profil m.m.</p></span>,
         tools: ['PHP', 'MySQL'],
-        url: 'http://phpgrupp.heliohost.org',
+        url: 'http://fontendblog.rf.gd',
         repo: 'https://github.com/phpgrupp/simple-cms',
         img: 'front-end-blog.jpg',
         color: 'rgb(61, 44, 89)'
