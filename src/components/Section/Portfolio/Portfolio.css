@@ -46,6 +46,8 @@
 
 @media screen and (max-width: 700px) {
     .closedcards-wrapper {
+        flex-direction: column;
+        flex-wrap: nowrap;
         padding-right: 10%;
     }
     .double-width {
