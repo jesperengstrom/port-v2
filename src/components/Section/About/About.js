@@ -4,10 +4,11 @@ import React from 'react';
 import './About.css';
 
 //IMG
-const jesper = require('../../../img/j.jpg');
+const jesper = require('../../../img/jesper_grey.jpg');
 
 function About(props) {
     return(
+        <div className="outer-wrapper">
         <article className="about-wrapper flex justify-center">
             <div className="about-text-container item-text bold flex flex-column">
                 <p>Jag är en 35-årig Stockholmare som läser sista året på YH-utbildningen Front end-utvecklare på Nackademin.</p>
@@ -20,6 +21,7 @@ function About(props) {
                 </div>
             </div>
         </article>
+        </div>
     );
 }
 
