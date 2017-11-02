@@ -125,7 +125,10 @@ function Item({item, onClick, isOpen, closeCard, hidden}) {
 
 Item.propTypes = {
     item: PropTypes.object,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    isOpen: PropTypes.bool, 
+    closeCard: PropTypes.func,
+    hidden: PropTypes.any.isRequired
 };
 
 export default Item;

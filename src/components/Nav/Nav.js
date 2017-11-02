@@ -15,12 +15,12 @@ function Nav({ next, last }){
 
     return (
         <nav className="nav flex justify-center">
-            <div className='fixed fixed-top p-2'>
+            <div className='fixed fixed-top'>
                 <a href="mailto:jengstro@gmail.com">
                     <i className="anticon large-icon">&#xe659;</i>
                 </a>
             </div>
-            <div className="fixed fixed-bottom flex align-end p-2" style={{height:'33%'}}>
+            <div className="fixed fixed-bottom flex align-end" style={{height:'33%'}}>
             <a onClick={scrollTo} className={`transition-flip ${last ? 'flip' : ''}`}>
                 <i className="anticon large-icon">&#xe619;</i>
             </a>
